@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KennyHW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Left:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JqG-j2-j4H">
+                                <rect key="frame" x="77" y="130" width="239" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6EU-Qw-V1t">
+                                <rect key="frame" x="77" y="223" width="239" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="A6O-MB-Olb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Highscore:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ch3-8h-yj2">
+                                <rect key="frame" x="49" y="684" width="294" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="rjf-lq-HXZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kenny" translatesAutoresizingMaskIntoConstraints="NO" id="1oU-sr-kPf">
+                                <rect key="frame" x="129" y="362" width="135" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="uAO-VR-aSM"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9Y-jA-eYi">
+                                <rect key="frame" x="122" y="764" width="150" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Reset Highscore">
+                                    <color key="baseForegroundColor" red="0.91976243257522583" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="resetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kAq-7c-EBA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1oU-sr-kPf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="129" id="2cT-Kt-xLA"/>
+                            <constraint firstItem="1oU-sr-kPf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="F7h-wH-tcb"/>
+                            <constraint firstItem="1oU-sr-kPf" firstAttribute="centerX" secondItem="ch3-8h-yj2" secondAttribute="centerX" id="Isw-4X-jQM"/>
+                            <constraint firstItem="6EU-Qw-V1t" firstAttribute="centerX" secondItem="1oU-sr-kPf" secondAttribute="centerX" id="Osh-4Y-sjT"/>
+                            <constraint firstItem="JqG-j2-j4H" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="71" id="Pmx-RC-nna"/>
+                            <constraint firstItem="JqG-j2-j4H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="77" id="WVq-HJ-1tA"/>
+                            <constraint firstItem="6EU-Qw-V1t" firstAttribute="top" secondItem="JqG-j2-j4H" secondAttribute="bottom" constant="60" id="YTu-mH-pBt"/>
+                            <constraint firstItem="JqG-j2-j4H" firstAttribute="trailing" secondItem="6EU-Qw-V1t" secondAttribute="trailing" id="bMC-e7-Mzz"/>
+                            <constraint firstItem="ch3-8h-yj2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cdz-CV-lKh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ch3-8h-yj2" secondAttribute="bottom" constant="110" id="dij-He-Ws6"/>
+                            <constraint firstItem="ch3-8h-yj2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="nHD-yd-vsf"/>
+                            <constraint firstItem="JqG-j2-j4H" firstAttribute="leading" secondItem="6EU-Qw-V1t" secondAttribute="leading" id="ryN-tI-jTt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="highscoreLabel" destination="ch3-8h-yj2" id="vN9-GV-qwa"/>
+                        <outlet property="kennyImage" destination="1oU-sr-kPf" id="nic-KF-XmK"/>
+                        <outlet property="scoreLabel" destination="6EU-Qw-V1t" id="RRT-iF-qhD"/>
+                        <outlet property="timerLabel" destination="JqG-j2-j4H" id="WS2-PY-Hyd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="kenny" width="2000" height="2001"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
